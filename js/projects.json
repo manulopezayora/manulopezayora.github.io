@@ -8,8 +8,8 @@
       "tagClassName": "vanila",
       "title": "Portfolio personal",
       "info": "Página web personal y portfolio con algunos de los proyectos que voy realizando por mi cuenta.",
-      "projectURL": "#",
-      "repositoryURL": "#"
+      "projectURL": "https://manulopezayora.github.io/",
+      "repositoryURL": "https://github.com/manulopezayora/manulopezayora.github.io"
     },
     {
       "id": 2,
@@ -41,7 +41,7 @@
       "tagClassName": "vanila",
       "title": "FilmApp",
       "info": "Aplicación para el programa de retos de JavaScript de Dorian Design. Es un buscador de peliculas y consume la API de OMDB. <br />Las tareas se almacenan en LocalStorage y la sesión del usuario en SessionStorage. Si no se ven correctamente borralo y actualiza la aplicación.",
-      "projectURL": "#",
+      "projectURL": "https://manulopezayora.github.io/movieSearch/",
       "repositoryURL": "https://github.com/ManuelJesusLopez/movieSearch"
     }
   ]
