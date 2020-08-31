@@ -1,0 +1,48 @@
+{
+  "Projects": [
+    {
+      "id": 1,
+      "imgURL": "../img/manulopez.png",
+      "imgAlt": "Manu Lopez Website",
+      "tagText": "HTML - CSS - JS",
+      "tagClassName": "vanila",
+      "title": "Portfolio personal",
+      "info": "Página web personal y portfolio con algunos de los proyectos que voy realizando por mi cuenta.",
+      "projectURL": "#",
+      "repositoryURL": "#"
+    },
+    {
+      "id": 2,
+      "imgURL": "../img/todolist.png",
+      "imgAlt": "Lista de tareas",
+      "tagText": "HTML - CSS - JS",
+      "tagClassName": "vanila",
+      "title": "TODO List",
+      "info": "Pequeña aplicación de lista de tareas. Hecha para un programa de retos de JavaScript.<br />Las tareas se almacenan en LocalStorage. Si no se ven correctamente borralo y actualiza la aplicación.",
+      "projectURL": "https://manulopezayora.github.io/TODOList_Practice/",
+      "repositoryURL": "https://github.com/ManuelJesusLopez/TODOList_Practice"
+    },
+    {
+      "id": 3,
+      "imgURL": "../img/periodic-table.png",
+      "imgAlt": "Tabla Periódica de los elementos",
+      "tagText": "HTML - CSS",
+      "tagClassName": "vanila",
+      "title": "Tabla periódica de los elementos",
+      "info": "Pequeño proyecto que hice para asimilar los conceptos de CSS Grid. No se me ocurrió mejor ejemplo que hacer la tabla periódica para ordenar el Grid en la vista de escritorio y en la de móvil.",
+      "projectURL": "https://codepen.io/manueljesuslopez/full/VwvRbWv",
+      "repositoryURL": "https://github.com/ManuelJesusLopez/Tabla-Periodica-CSS-Grid"
+    },
+    {
+      "id": 4,
+      "imgURL": "../img/filmApp.png",
+      "imgAlt": "Buscador de películas",
+      "tagText": "HTML - CSS - JS",
+      "tagClassName": "vanila",
+      "title": "FilmApp",
+      "info": "Aplicación para el programa de retos de JavaScript de Dorian Design. Es un buscador de peliculas y consume la API de OMDB. <br />Las tareas se almacenan en LocalStorage y la sesión del usuario en SessionStorage. Si no se ven correctamente borralo y actualiza la aplicación.",
+      "projectURL": "#",
+      "repositoryURL": "https://github.com/ManuelJesusLopez/movieSearch"
+    }
+  ]
+}
