@@ -2,14 +2,14 @@
   "Projects": [
     {
       "id": 1,
-      "imgURL": "../img/manulopez.png",
-      "imgAlt": "Manu Lopez Website",
-      "tagText": "HTML - CSS - JS",
+      "imgURL": "../img/Clipboard-landing-page.png",
+      "imgAlt": "Clipboard-landing-page",
+      "tagText": "HTML - CSS",
       "tagClassName": "vanila",
-      "title": "Portfolio personal",
-      "info": "Página web personal y portfolio con algunos de los proyectos que voy realizando por mi cuenta.",
-      "projectURL": "https://manulopezayora.github.io/",
-      "repositoryURL": "https://github.com/manulopezayora/manulopezayora.github.io"
+      "title": "Clipboard landing page",
+      "info": "Proyecto de maquetación de una landing page sacado de la página FrontEnd Mentor",
+      "projectURL": "https://manulopezayora.github.io/clipboard-landing-page/",
+      "repositoryURL": "https://github.com/manulopezayora/clipboard-landing-page"
     },
     {
       "id": 2,
@@ -35,14 +35,36 @@
     },
     {
       "id": 4,
-      "imgURL": "../img/filmApp.png",
-      "imgAlt": "Buscador de películas",
+      "imgURL": "../img/RockPaperScissors.png",
+      "imgAlt": "Rock-Paper-Scissors",
       "tagText": "HTML - CSS - JS",
       "tagClassName": "vanila",
-      "title": "FilmApp",
-      "info": "Aplicación para el programa de retos de JavaScript de Dorian Design. Es un buscador de peliculas y consume la API de OMDB. <br />Las tareas se almacenan en LocalStorage y la sesión del usuario en SessionStorage. Si no se ven correctamente borralo y actualiza la aplicación.",
-      "projectURL": "https://manulopezayora.github.io/movieSearch/",
-      "repositoryURL": "https://github.com/ManuelJesusLopez/movieSearch"
+      "title": "Rock Paper Scissors",
+      "info": "Proyecto sacado de FrontEnd Mentor y modificado para hacer la práctica de Dorian Desing.",
+      "projectURL": "https://manulopezayora.github.io/rock-paper-scissors/",
+      "repositoryURL": "https://github.com/manulopezayora/rock-paper-scissors"
+    },
+    {
+      "id": 5,
+      "imgURL": "../img/GifExpertApp.png",
+      "imgAlt": "GifExpertApp",
+      "tagText": "REACT - HOOKS",
+      "tagClassName": "react",
+      "title": "GifExpertApp",
+      "info": "Proyecto muy simple del curso de React.js de Fernando Herrera. También tiene algo de tests unitarios con Enzyme y Jest.",
+      "projectURL": "https://manulopezayora.github.io/react-gifexpertapp/",
+      "repositoryURL": "https://github.com/manulopezayora/react-gifexpertapp"
+    },
+    {
+      "id": 6,
+      "imgURL": "../img/Maps.png",
+      "imgAlt": "Maps",
+      "tagText": "HTML - CSS - JS",
+      "tagClassName": "vanila",
+      "title": "Maps con Leaflet",
+      "info": "Proyecto de marcador de mapas con la API de Leaflet. Las coordenadas son las que da google en la URL de google maps.",
+      "projectURL": "https://manulopezayora.github.io/leaflet-maps/",
+      "repositoryURL": "https://github.com/manulopezayora/leaflet-maps"
     }
   ]
 }
