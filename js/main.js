@@ -150,9 +150,7 @@ const createProject = async () => {
          <a class="card__link" href="${project.projectURL}" target="_blank" rel="noopener noreferrer" >
            <h3 class="card__title">${project.title}</h3>
          </a>
-         <p class="card__text">
-         ${project.info}
-         </p>
+         
        </div>
        <div class="card__footer">
          <a href="${project.projectURL}" class="card__footer-link"target="_blank" rel="noopener noreferrer">Ver aplicación</a>
