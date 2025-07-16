@@ -111,32 +111,57 @@ particlesJS("particles-js", {
   retina_detect: true,
 })
 
+// ! Projects Data
+const PROJECTS = [
+    {
+      id: 1,
+      imgURL: 'img/Clipboard-landing-page.png',
+      imgAlt: 'Clipboard-landing-page',
+      tagText: 'HTML - CSS',
+      tagClassName: 'vanila',
+      title: 'Clipboard landing page',
+      info: 'Proyecto de maquetación de una landing page sacado de la página FrontEnd Mentor',
+      projectURL: 'https://manulopezayora.github.io/clipboard-landing-page/',
+      repositoryURL: 'https://github.com/manulopezayora/clipboard-landing-page'
+    },
+    {
+      id: 2,
+      imgURL: 'img/RockPaperScissors.png',
+      imgAlt: 'Rock-Paper-Scissors',
+      tagText: 'HTML - CSS - JS',
+      tagClassName: 'vanila',
+      title: 'Rock Paper Scissors',
+      info: 'Proyecto sacado de FrontEnd Mentor y modificado para hacer la práctica de Dorian Desing.',
+      projectURL: 'https://manulopezayora.github.io/rock-paper-scissors/',
+      repositoryURL: 'https://github.com/manulopezayora/rock-paper-scissors'
+    },
+    {
+      id: 3,
+      imgURL: 'img/Maps.png',
+      imgAlt: 'Maps',
+      tagText: 'HTML - CSS - JS',
+      tagClassName: 'vanila',
+      title: 'Maps con Leaflet',
+      info: 'Proyecto de marcador de mapas con la API de Leaflet. Las coordenadas son las que da google en la URL de google maps.',
+      projectURL: 'https://manulopezayora.github.io/leaflet-maps/',
+      repositoryURL: 'https://github.com/manulopezayora/leaflet-maps'
+    }
+  ];
+
 /* ---- END particles.js config ---- */
 
 // ! DOM
-const projectsContainer = document.getElementById("projects")
+const projectsContainer = document.getElementById("projects");
 
 // ! Variables
-let projectData
+const projectData = PROJECTS;
 
 // ! Functions
-const getProjects = async () => {
-  const resquest = await fetch("js/projects.json", {
-    method: "GET",
-    headers: {
-      Accept: "application/json",
-    },
-  })
-  const data = await resquest.json()
-  projectData = data.Projects
-}
-
 // Create project component
 const createProject = async () => {
-  const cardContainer = document.createElement("DIV")
-  cardContainer.classList.add("card-container")
+  const cardContainer = document.createElement("DIV");
+  cardContainer.classList.add("card-container");
 
-  await getProjects()
   projectData.forEach((project) => {
     cardContainer.innerHTML += `
     <div class="card">
@@ -150,7 +175,7 @@ const createProject = async () => {
          <a class="card__link" href="${project.projectURL}" target="_blank" rel="noopener noreferrer" >
            <h3 class="card__title">${project.title}</h3>
          </a>
-         
+
        </div>
        <div class="card__footer">
          <a href="${project.projectURL}" class="card__footer-link"target="_blank" rel="noopener noreferrer">Ver aplicación</a>
@@ -158,12 +183,12 @@ const createProject = async () => {
        </div>
      </div>
      `
-  })
-  projectsContainer.append(cardContainer)
+  });
+  projectsContainer.append(cardContainer);
 }
 
 // ! Events
 
 window.addEventListener("load", () => {
-  createProject()
-})
+  createProject();
+});
