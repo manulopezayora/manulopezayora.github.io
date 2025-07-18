@@ -1,0 +1,69 @@
+---
+import '@fontsource-variable/onest';
+import Footer from '../components/Footer.astro';
+import Header from '../components/Header.astro';
+import '../styles/global.css';
+
+interface Props {
+	title: string;
+	description: string;
+}
+
+const { title, description } = Astro.props;
+---
+
+<!doctype html>
+<html lang="es" class="dark">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="description" content={ description }>
+		<meta name="viewport" content="width=device-width" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<meta name="generator" content={ Astro.generator } />
+		<title>{ title }</title>
+	</head>
+	<body class="bg-neutral-950">
+		<Header />
+		<slot />
+		<Footer />
+	</body>
+</html>
+
+<style is:global>
+	:root {
+		color-scheme: light dark;
+	}
+
+	*, *::before, *::after {
+		box-sizing: border-box;
+	}
+
+	html {
+		font-family: 'Onest Variable', system-ui, sans-serif;
+		scroll-behavior: smooth;
+	}
+
+	body {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		min-height: 100dvh;
+		padding: 0 20px;
+		background-image: radial-gradient(ellipse 80% 80% at 50% -20%, rgba(120, 119, 198, 0.3), rgba(255, 255, 255, 0));
+
+		/* Light theme */
+		/* background-color: white;
+		background-image: radial-gradient(
+			100% 50% at 50% 0%,
+			rgba(0, 163, 255, 0.13) 0%,
+			rgba(0, 163, 255, 0) 50%,
+			rgba(0, 163, 255, 0) 100%
+		); */
+	}
+
+	@media (prefers-reduced-motion: reduce) {
+		html{
+			scroll-behavior: auto;
+		}
+	}
+</style>

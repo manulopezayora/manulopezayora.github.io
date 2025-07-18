@@ -1,0 +1,42 @@
+---
+import ExperienceItem from './ExperienceItem.astro';
+
+const EXPERIENCE = [
+    {
+        date: 'Junio 2023 - Presente',
+        title: 'Ezzing Solar',
+        position: 'Front-end Developer',
+        description: 'Descripcion',
+        tasks: [
+            'Desarrollé una plataforma para conectar instaladores con empresas del sector fotovoltaico con React 18, gestión de estado en Redux y Material UI.',
+            'Desarrollé nuevas funcionalidades para los proyectos internos con Angular 16+, TypeScript, SASS, GraphQL y gestión de estado en Redux, enfocándome en mejorar el rendimiento de las aplicaciones y en proporcionar un código limpio y escalable.',
+            'Participé activamente en las revisiones de código de mis compañeros para garantizar la calidad de los desarrollos y fomentar el uso de buenas prácticas.',
+            'Colaboré estrechamente con los equipos de diseño UI/UX y Backend para lograr una integración fluida y coherencia funcional.',
+            'Participé en la creación e implementación de la librería interna de componentes y herramientas para agilizar y estandarizar los proyectos desarrollados con React y con Angular. Reduciendo el código de los proyectos en un 20% y agilizando el desarrollo de nuevas funcionalidades.'
+        ],
+        // link: '#'
+    },
+    {
+        date: 'Junio 2021 - Junio 2023',
+        title: 'NTT Data',
+        position: 'Front-end Developer',
+        description: 'descripción',
+        tasks: [
+            'Desarrollo de nuevas funcionalidades para una aplicación web del sector público, utilizando Angular 11+, Typescript y PrimeNG, con despliegue en servidores Oracle WebLogic.',
+            'Participé en el proceso de modernización de una aplicación, migrando de AngularJS a Angular 13+ y Typescript, testing con Karma y Jest.',
+            'Implementé Web Components y modularización del código.',
+        ]
+    }
+]
+---
+
+
+<ol class="relative border-s border-gray-700 ml-3">
+    {
+        EXPERIENCE.map(experience => (
+            <li class="mb-10 ms-4">
+                <ExperienceItem { ...experience } />
+            </li>
+        ))
+    }
+</ol>
