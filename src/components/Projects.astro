@@ -1,0 +1,93 @@
+---
+import AngularIcon from '../icons/Angular.astro'
+import CssIcon from '../icons/Css.astro'
+import FlutterIcon from '../icons/Flutter.astro'
+import GithubIcon from '../icons/Github.astro'
+import HtmlIcon from '../icons/Html.astro'
+import JavaScriptIcon from '../icons/JavaScript.astro'
+import ReactIcon from '../icons/React.astro'
+import TypescriptIcon from '../icons/Typescript.astro'
+import WebIcon from '../icons/Web.astro'
+import LinkButton from './LinkButton.astro'
+
+const TAGS = {
+    HTML: {
+        name: 'HTML',
+        icon: HtmlIcon
+    },
+    CSS: {
+        name: 'CSS',
+        icon: CssIcon
+    },
+    JAVASCRIPT: {
+        name: 'JavaScript',
+        icon: JavaScriptIcon
+    },
+    ANGULAR: {
+        name: 'Angular',
+        icon: AngularIcon
+    },
+    REACT: {
+        name: 'ReactJs',
+        icon: ReactIcon
+    },
+    TYPESCRIPT: {
+        name: 'TypeScript',
+        icon: TypescriptIcon
+    },
+    FLUTTER: {
+        name: 'Flutter',
+        icon: FlutterIcon
+    }
+}
+
+const PROJECTS = [
+    {
+        title: 'Rock-Paper-Scissors',
+        description: 'Proyecto sacado de FrontEnd Mentor y modificado para hacer la práctica de Dorian Desing.',
+        link: 'https://manulopezayora.github.io/rock-paper-scissors/',
+        github: 'https://github.com/manulopezayora/rock-paper-scissors',
+        image: 'img/rock-paper-scissors.webp',
+        tags: [TAGS.HTML, TAGS.CSS, TAGS.JAVASCRIPT]
+    }
+]
+---
+
+{
+    PROJECTS.map(({
+        title,
+        description,
+        tags,
+        github,
+        image,
+        link
+    }) => (
+        <article>
+            <h3 class="text-2xl font-semibold text-yellow-200/90">{ title }</h3>
+            <ul class="flex items-center gap-x-4 mb-2">
+                {
+                    tags.map((tag) => (
+                        <li>
+                            <span class={`flex gap-x-2 rounded-full text-xs py-2`}>
+                                <tag.icon class="size-4"/>
+                                { tag.name }
+                            </span>
+                        </li>
+                    ))
+                }
+            </ul>
+            <p class="text-md md:text-xl mb-4 text-pretty">{ description }</p>
+            <div class="flex items-center gap-5 my-4">
+                <LinkButton href={ link }>
+                    <WebIcon class="size-5" />
+                    Preview
+                </LinkButton>
+                <LinkButton href={ github }>
+                    <GithubIcon class="size-5" />
+                    Repositorio
+                </LinkButton>
+            </div>
+            <img class="rounded shadow-lg shadow-white/10" src={image} alt={`Screenshot del proyecto ${title}`}>
+        </article>
+    ))
+}

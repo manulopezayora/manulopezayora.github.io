@@ -1,0 +1,76 @@
+---
+import Experience from '../components/Experience.astro';
+import LinkButton from '../components/LinkButton.astro';
+import Projects from '../components/Projects.astro';
+import SectionContainer from '../components/SectionContainer.astro';
+import BriefcaseIcon from '../icons/Briefcase.astro';
+import CodeIcon from '../icons/Code.astro';
+import EmailIcon from '../icons/Email.astro';
+import GithubIcon from '../icons/Github.astro';
+import LinkedinIcon from '../icons/Linkedin.astro';
+import Layout from '../layouts/Layout.astro';
+
+// Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
+// Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
+---
+
+<Layout
+	title='Portfolio de Manu Lopez - Desarrollador y Programador Web con más de 4 años de experiencia'
+	description='Experto en Frontend con Angular y React'
+>
+	<main>
+		<SectionContainer id="about" class="pt-44 relative h-[100dvh] overflow-hidden">
+			<img
+				class="rounded-full size-12 mb-4"
+				src="/img/author.jpg"
+				alt="portfolio photo"
+			/>
+			<h1 class="text-white text-2xl md:text-5xl font-bold flex gap-x-4 pb-5">
+				Hola! Soy <span class="text-yellow-300/90">Manu López</span>
+			</h1>
+			<h2 class="text-md md:text-xl text-wrap">Más de 4 años de experiencia como <span class="text-yellow-300/90">Desarrollador Frontend con Angular y React</span>. He participado en proyectos de diferentes sectores desarrollando funcionalidades nuevas, proyectos de migración tecnológica y en la creación e implementación de librerías de componentes y herramientas.</h2>
+
+			<nav class="flex gap-4 mt-8 flex-wrap text-sm md:text-lg">
+				<LinkButton href="https://www.linkedin.com/in/manulopezayora/">
+					<LinkedinIcon class="size-4" />
+					Linkedin
+				</LinkButton>
+				<LinkButton href="https://github.com/manulopezayora">
+					<GithubIcon class="size-4" />
+					Github
+				</LinkButton>
+				<LinkButton href="mailto:manulopezayora1985@protonmail.com">
+					<EmailIcon class="size-4" />
+					manulopezayora1985@protonmail.com
+				</LinkButton>
+			</nav>
+		</SectionContainer>
+
+		<SectionContainer id="experience">
+			<h2 class="text-3xl font-semibold flex gap-x-2 items-center">
+				<BriefcaseIcon class="size-7" />
+				Experiencia
+			</h2>
+			<div class="border border-solid mt-2 mb-6"></div>
+			<Experience />
+		</SectionContainer>
+
+		<SectionContainer id="projects">
+			<h2 class="text-3xl font-semibold flex gap-x-2 items-center">
+				<CodeIcon class="size-7" />
+				Proyectos
+			</h2>
+			<div class="border border-solid mt-2 mb-6"></div>
+			<Projects />
+		</SectionContainer>
+	</main>
+</Layout>
+
+<script>
+	const bg = document.getElementById('about');
+
+	window.addEventListener('scroll', () => {
+		const offset = window.scrollY * 0.3;
+		bg!.style.transform = `translateY(${offset}px)`;
+	});
+</script>
