@@ -1,10 +1,10 @@
 <template>
     <div class="relative flex flex-col flex-1">
-        <header class="px-10 py-15 flex flex-col gap-5 lg:min-h-dvh lg:sticky lg:top-1 lg:justify-between">
+        <header class="px-5 py-10 flex flex-col gap-5 lg:min-h-dvh lg:sticky lg:top-1 lg:justify-between">
             <div class="flex flex-col gap-5">
-                <h1 class="text-3xl font-bold text-gray-100">Manuel Jesús López Martínez</h1>
-                <h2 class="text-2xl text-gray-100">Senior frontend developer</h2>
-                <p class="text-lg text-gray-400">Especializado en la construcción de experiencias digitales robustas, escalables y centradas en el usuario con Angular, React y Vue</p>
+                <h1 class="text-4xl font-bold text-gray-100">Manuel Jesús López Martínez</h1>
+                <h2 class="text-lg text-gray-100">Senior frontend developer</h2>
+                <p class="text-gray-400">Especializado en la construcción de experiencias digitales robustas, escalables y centradas en el usuario con Angular, React y Vue</p>
 
                 <nav class="flex-col hidden lg:flex">
                     <RouterLink to="/" class="flex gap-1 items-center text-gray-400 hover:text-gray-200 active:text-shadow-teal-400">
