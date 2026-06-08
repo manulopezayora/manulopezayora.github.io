@@ -14,6 +14,9 @@ export const experience: Experience[] = [
             'GraphQL',
             'Docker',
             'Flutter',
+            'Git',
+            'GitFlow',
+            'Conventional Commits',
         ],
         company: 'Ezzing',
         companyLink: 'https://www.ezzing.com/',
@@ -32,7 +35,7 @@ export const experience: Experience[] = [
     {
         period: '2021 — 2023',
         position: 'Frontend Developer',
-        positionTags: ['Angular', 'NgRX', 'RxJS', 'TypeScript'],
+        positionTags: ['Angular', 'AngularJs', 'NgRX', 'RxJS', 'TypeScript', 'Jenkins', 'WebComponents', 'PrimeNG', 'Karma/Jasmine', 'Jest', 'Git', 'SVN'],
         company: 'NTT DATA',
         companyLink: 'https://es.nttdata.com/',
         experienceDetail: [
