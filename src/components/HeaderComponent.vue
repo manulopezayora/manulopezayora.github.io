@@ -15,35 +15,11 @@
             </p>
             <NavMenu />
         </div>
-        <ul class="flex gap-5 ml-1 mt-8">
-            <li>
-                <RouterLink to="/" class="hover:text-slate-200">
-                    <GitHubIcon class="h-8" />
-                </RouterLink>
-            </li>
-            <li>
-                <RouterLink to="/" class="hover:text-slate-200">
-                    <LinkedInIcon class="h-8" />
-                </RouterLink>
-            </li>
-            <li>
-                <RouterLink to="/" class="hover:text-slate-200">
-                    <CodePenIcon class="h-8" />
-                </RouterLink>
-            </li>
-            <li>
-                <RouterLink to="/" class="hover:text-slate-200">
-                    <InstagramIcon class="h-8" />
-                </RouterLink>
-            </li>
-        </ul>
+        <SocialLinksComponent />
     </header>
 </template>
 
 <script setup lang="ts">
-import CodePenIcon from '@/icons/CodePenIcon.vue';
-import GitHubIcon from '@/icons/GitHubIcon.vue';
-import InstagramIcon from '@/icons/InstagramIcon.vue';
-import LinkedInIcon from '@/icons/LinkedInIcon.vue';
 import NavMenu from './NavMenu.vue';
+import SocialLinksComponent from './SocialLinksComponent.vue';
 </script>
