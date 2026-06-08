@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { experience as jobExperience } from '@/data/experience.data.ts';
-import LinkArrowIcon from '@/icons/LinkArrowIcon.vue';
+import RightArrow from '@/icons/RightArrow.vue';
 import ExperienceBlockComponent from './ExperienceBlockComponent.vue';
 </script>
 
@@ -32,8 +32,8 @@ import ExperienceBlockComponent from './ExperienceBlockComponent.vue';
                     rel="noreferrer noopener"
                 >
                     <span class="group-hover/link:text-teal-300"
-                        >CV completo<LinkArrowIcon
-                            class="inline-block h-4 w-4 shrink-0 transition-transform group-hover/link:-translate-y-1 group-hover/link:translate-x-1 group-focus-visible/link:-translate-y-1 group-focus-visible/link:translate-x-1 motion-reduce:transition-none ml-1 translate-y-px" /></span
+                        >CV completo<RightArrow
+                            class="ml-1 inline-block h-4 w-4 shrink-0 -translate-y-px transition-transform group-hover/link:translate-x-2 group-focus-visible:translate-x-2 motion-reduce:transition-none" /></span
                 ></a>
             </div>
         </div>
