@@ -14,7 +14,7 @@
                 centradas en el usuario con Angular, React y Vue
             </p>
 
-            <nav class="flex-col hidden lg:flex">
+            <nav class="flex-col hidden lg:flex lg:gap-4">
                 <RouterLink to="/" class="group flex gap-1 items-center hover:text-slate-200">
                     <span
                         id="nav-line"
