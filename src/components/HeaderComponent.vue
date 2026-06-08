@@ -13,37 +13,7 @@
                 Especializado en la construcción de experiencias digitales robustas, escalables y
                 centradas en el usuario con Angular, React y Vue
             </p>
-
-            <nav class="flex-col hidden lg:flex lg:gap-4">
-                <RouterLink to="/" class="group flex gap-1 items-center hover:text-slate-200">
-                    <span
-                        id="nav-line"
-                        class="bg-slate-400 w-12 h-0.5 block transition-all ease-in-out duration-300 group-hover:w-20 group-hover:bg-slate-200"
-                    ></span>
-                    <span class=".nav-link">About</span>
-                </RouterLink>
-                <RouterLink to="/" class="group flex gap-1 items-center hover:text-slate-200">
-                    <span
-                        id="nav-line"
-                        class="bg-slate-400 w-12 h-0.5 block transition-all ease-in-out duration-300 group-hover:w-20 group-hover:bg-slate-200"
-                    ></span>
-                    <span class=".nav-link">Experience</span>
-                </RouterLink>
-                <RouterLink to="/" class="group flex gap-1 items-center hover:text-slate-200">
-                    <span
-                        id="nav-line"
-                        class="bg-slate-400 w-12 h-0.5 block transition-all ease-in-out duration-300 group-hover:w-20 group-hover:bg-slate-200"
-                    ></span>
-                    <span class=".nav-link">Projects</span>
-                </RouterLink>
-                <RouterLink to="/" class="group flex gap-1 items-center hover:text-slate-200">
-                    <span
-                        id="nav-line"
-                        class="bg-slate-400 w-12 h-0.5 block transition-all ease-in-out duration-300 group-hover:w-20 group-hover:bg-slate-200"
-                    ></span>
-                    <span class=".nav-link">Articles</span>
-                </RouterLink>
-            </nav>
+            <NavMenu />
         </div>
         <ul class="flex gap-5 ml-1 mt-8">
             <li>
@@ -75,4 +45,5 @@ import CodePenIcon from '@/icons/CodePenIcon.vue';
 import GitHubIcon from '@/icons/GitHubIcon.vue';
 import InstagramIcon from '@/icons/InstagramIcon.vue';
 import LinkedInIcon from '@/icons/LinkedInIcon.vue';
+import NavMenu from './NavMenu.vue';
 </script>
