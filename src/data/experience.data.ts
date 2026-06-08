@@ -2,7 +2,7 @@ import type { Experience } from '@/interfaces/Experience.interface';
 
 export const experience: Experience[] = [
     {
-        period: '2023 — 2025',
+        period: 'Junio 2023 — Julio 2025',
         position: 'Senior Frontend Developer',
         positionTags: [
             'Angular',
@@ -33,7 +33,7 @@ export const experience: Experience[] = [
         ],
     },
     {
-        period: '2021 — 2023',
+        period: 'Junio 2021 — Mayo 2023',
         position: 'Frontend Developer',
         positionTags: ['Angular', 'AngularJs', 'NgRX', 'RxJS', 'TypeScript', 'Jenkins', 'WebComponents', 'PrimeNG', 'Karma/Jasmine', 'Jest', 'Git', 'SVN'],
         company: 'NTT DATA',
