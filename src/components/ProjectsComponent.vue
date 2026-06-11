@@ -18,21 +18,6 @@ import ProjectBlockComponent from './ProjectBlockComponent.vue';
                     <ProjectBlockComponent :project="project" />
                 </li>
             </ul>
-            <!-- <div class="mt-12">
-                <a
-                    class="inline-flex items-center leading-tight font-semibold text-slate-200 group"
-                    aria-label="View Full Project Archive"
-                    href="/archive"
-                    ><span
-                        ><span class="pb-px transition motion-reduce:transition-none"
-                            >View Full Project </span
-                        ><span class="whitespace-nowrap"
-                            ><span class="pb-px transition motion-reduce:transition-none"
-                                >Archive</span
-                            ><RightArrow
-                                class="ml-1 inline-block h-4 w-4 shrink-0 -translate-y-px transition-transform group-hover:translate-x-2 motion-reduce:transition-none" /></span></span
-                ></a>
-            </div> -->
         </div>
     </section>
 </template>

@@ -1,3 +1,8 @@
+<script setup lang="ts">
+import NavMenu from './NavMenu.vue';
+import SocialLinksComponent from './SocialLinksComponent.vue';
+</script>
+
 <template>
     <header
         class="lg:sticky lg:top-0 lg:flex lg:max-h-screen lg:w-[48%] lg:flex-col lg:justify-between lg:py-24"
@@ -18,8 +23,3 @@
         <SocialLinksComponent />
     </header>
 </template>
-
-<script setup lang="ts">
-import NavMenu from './NavMenu.vue';
-import SocialLinksComponent from './SocialLinksComponent.vue';
-</script>
