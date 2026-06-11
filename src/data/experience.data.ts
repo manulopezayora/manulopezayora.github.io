@@ -2,22 +2,9 @@ import type { Experience } from '@/interfaces/Experience.interface';
 
 export const experience: Experience[] = [
     {
-        period: 'Junio 2023 — Julio 2025',
+        period: 'Jun 2023 — Jul 2025',
         position: 'Senior Frontend Developer',
-        positionTags: [
-            'Angular',
-            'NgRX/Entity',
-            'RxJS',
-            'React',
-            'Redux',
-            'TypeScript',
-            'GraphQL',
-            'Docker',
-            'Flutter',
-            'Git',
-            'GitFlow',
-            'Conventional Commits',
-        ],
+        positionTags: ['Angular', 'NgRX/Entity', 'RxJS', 'React', 'Redux', 'TypeScript', 'GraphQL', 'Docker', 'Flutter', 'Git', 'GitFlow', 'Conventional Commits'],
         company: 'Ezzing',
         companyLink: 'https://www.ezzing.com/',
         experienceDetail: [
@@ -33,7 +20,7 @@ export const experience: Experience[] = [
         ],
     },
     {
-        period: 'Junio 2021 — Mayo 2023',
+        period: 'Jun 2021 — May 2023',
         position: 'Frontend Developer',
         positionTags: ['Angular', 'AngularJs', 'NgRX', 'RxJS', 'TypeScript', 'Jenkins', 'WebComponents', 'PrimeNG', 'Karma/Jasmine', 'Jest', 'Git', 'SVN'],
         company: 'NTT DATA',
